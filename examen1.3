@@ -1,0 +1,320 @@
+
+// Variables para los días de la semana 
+ string dia1 = "Lunes";
+ string dia2 = "Martes";
+ string dia3 = "Miércoles";
+ string dia4 = "Jueves";
+ string dia5 = "Viernes";
+
+
+
+
+ // Variables para las materias
+ string materia1 = "Matemáticas";
+ string materia2 = "Español";
+ string materia3 = "Ciencias";
+ string materia4 = "Ciencias Sociales";
+
+ string dia10 = ""; //selecciona la materia escogida por el usuario
+ string nombre = "";
+
+ string materiaopc = ""; // Variable para la materia seleccionada por el usuario
+
+
+
+
+ while (true) // Mantener el programa en ejecución para evitar que se cierre inmediatamente
+ {
+
+
+     // Variable para el nombre del usuario
+     string nombreF = "";
+     string nombreOp = ""; // Variable para el nombre ingresado por el usuario
+
+
+     Console.WriteLine("----------------------------------------------------------------------------------------");
+     Console.WriteLine("BIENVENIDO AL CALENDEARIO DE PLANIFICACION...");
+     Console.WriteLine("----------------------------------------------------------------------------------------");
+
+     Console.WriteLine("1. ver calendario ");
+     Console.WriteLine("2. agregar al calendario ");
+     Console.WriteLine("3. borrar claendario ");
+     Console.WriteLine("4. limpiar pantalla");
+     Console.WriteLine("5. salir ");
+     Console.WriteLine("");
+
+     Console.WriteLine("seleccione una opcion: ");
+     byte op = byte.Parse(Console.ReadLine());
+     Console.WriteLine("----------------------------------------------------------------------------------------");
+
+     if (op == 1)
+     {
+         Console.WriteLine("Dia: " + dia1 + " materia: " + dia10 + " nombre " + nombre);
+         Console.WriteLine("Dia: " + dia2 + " materia: " + dia10 + " nombre " + nombre);
+         Console.WriteLine("Dia: " + dia3 + " materia: " + dia10 + " nombre " + nombre);
+         Console.WriteLine("Dia: " + dia4 + " materia: " + dia10 + " nombre " + nombre);
+         Console.WriteLine("Dia: " + dia5 + " materia: " + dia10 + " nombre " + nombre);
+
+
+
+
+     }
+
+
+
+
+
+     else if (op == 2)
+
+     {
+         Console.WriteLine("Ingrese el nombre del usuario: ");
+         nombreOp = Console.ReadLine();
+         if (nombreOp == nombre && nombreOp.Length > 3)
+
+             Console.WriteLine("Nombre ya existe en el calendario. Por favor, ingrese un nombre diferente.");
+
+         else
+             Console.Write("Ingrese el día de la semana (1.Lunes, 2.Martes, 3.Miércoles, 4.Jueves, 5.Viernes): ");
+         byte dia = byte.Parse(Console.ReadLine());
+
+
+
+
+         if (dia == 1)
+         {
+             Console.WriteLine("Ingrese la materia");
+             Console.WriteLine("1.matematicas, 2. español, 3. ciencias, 4.ciencias sociales ");
+             byte materiaop = byte.Parse(Console.ReadLine());
+
+             if (materiaop == 1)
+             {
+                 materiaopc = "matematicas";
+                 Console.WriteLine("Materia seleccionada: Matemáticas");
+             }
+             else if (materiaop == 2)
+             {
+                 materiaopc = "español";
+                 Console.WriteLine("Materia seleccionada: Español");
+             }
+             else if (materiaop == 3)
+             {
+                 materiaopc = "ciencias";
+                 Console.WriteLine("Materia seleccionada: Ciencias");
+             }
+             else if (materiaop == 4)
+             {
+                 materiaopc = "ciencias sociales";
+                 Console.WriteLine("Materia seleccionada: Ciencias Sociales");
+             }
+             else
+             {
+                 Console.WriteLine("Opción no válida. Por favor, ingrese un número del 1 al 4.");
+                 continue; // Vuelve al inicio del bucle
+             }
+
+
+             dia10 = materiaopc; // Asigna la materia seleccionada a la variable dia10
+             nombre = nombreOp; // Asigna el nombre del usuario a la variable nombreOp
+
+         }
+         else if (dia == 2)
+         {
+             Console.WriteLine("Ingrese la materia");
+             Console.WriteLine("1.matematicas, 2. español, 3. ciencias, 4.ciencias sociales ");
+             byte materiaop = byte.Parse(Console.ReadLine());
+
+             if (materiaop == 1)
+             {
+                 materiaopc = "matematicas";
+                 Console.WriteLine("Materia seleccionada: Matemáticas");
+             }
+             else if (materiaop == 2)
+             {
+                 materiaopc = "español";
+                 Console.WriteLine("Materia seleccionada: Español");
+             }
+             else if (materiaop == 3)
+             {
+                 materiaopc = "ciencias";
+                 Console.WriteLine("Materia seleccionada: Ciencias");
+             }
+             else if (materiaop == 4)
+             {
+                 materiaopc = "ciencias sociales";
+                 Console.WriteLine("Materia seleccionada: Ciencias Sociales");
+             }
+             else
+             {
+                 Console.WriteLine("Opción no válida. Por favor, ingrese un número del 1 al 4.");
+                 continue; // Vuelve al inicio del bucle
+             }
+
+
+             dia10 = materiaopc; // Asigna la materia seleccionada a la variable dia10
+             nombre = nombreOp; // Asigna el nombre del usuario a la variable nombreOp
+         }
+         else if (dia == 3)
+         {
+             Console.WriteLine("Ingrese la materia");
+             Console.WriteLine("1.matematicas, 2. español, 3. ciencias, 4.ciencias sociales ");
+             byte materiaop = byte.Parse(Console.ReadLine());
+
+             if (materiaop == 1)
+             {
+                 materiaopc = "matematicas";
+                 Console.WriteLine("Materia seleccionada: Matemáticas");
+             }
+             else if (materiaop == 2)
+             {
+                 materiaopc = "español";
+                 Console.WriteLine("Materia seleccionada: Español");
+             }
+             else if (materiaop == 3)
+             {
+                 materiaopc = "ciencias";
+                 Console.WriteLine("Materia seleccionada: Ciencias");
+             }
+             else if (materiaop == 4)
+             {
+                 materiaopc = "ciencias sociales";
+                 Console.WriteLine("Materia seleccionada: Ciencias Sociales");
+             }
+             else
+             {
+                 Console.WriteLine("Opción no válida. Por favor, ingrese un número del 1 al 4.");
+                 continue; // Vuelve al inicio del bucle
+             }
+
+
+             dia10 = materiaopc; // Asigna la materia seleccionada a la variable dia10
+             nombre = nombreOp; // Asigna el nombre del usuario a la variable nombreOp
+         }
+         else if (dia == 4)
+         {
+             Console.WriteLine("Ingrese la materia");
+             Console.WriteLine("1.matematicas, 2. español, 3. ciencias, 4.ciencias sociales ");
+             byte materiaop = byte.Parse(Console.ReadLine());
+
+             if (materiaop == 1)
+             {
+                 materiaopc = "matematicas";
+                 Console.WriteLine("Materia seleccionada: Matemáticas");
+             }
+             else if (materiaop == 2)
+             {
+                 materiaopc = "español";
+                 Console.WriteLine("Materia seleccionada: Español");
+             }
+             else if (materiaop == 3)
+             {
+                 materiaopc = "ciencias";
+                 Console.WriteLine("Materia seleccionada: Ciencias");
+             }
+             else if (materiaop == 4)
+             {
+                 materiaopc = "ciencias sociales";
+                 Console.WriteLine("Materia seleccionada: Ciencias Sociales");
+             }
+             else
+             {
+                 Console.WriteLine("Opción no válida. Por favor, ingrese un número del 1 al 4.");
+                 continue; // Vuelve al inicio del bucle
+             }
+
+
+             dia10 = materiaopc; // Asigna la materia seleccionada a la variable dia10
+             nombre = nombreOp; // Asigna el nombre del usuario a la variable nombreOp
+         }
+         else if (dia == 5)
+         {
+             Console.WriteLine("Ingrese la materia");
+             Console.WriteLine("1.matematicas, 2. español, 3. ciencias, 4.ciencias sociales ");
+             byte materiaop = byte.Parse(Console.ReadLine());
+
+             if (materiaop == 1)
+             {
+                 materiaopc = "matematicas";
+                 Console.WriteLine("Materia seleccionada: Matemáticas");
+             }
+             else if (materiaop == 2)
+             {
+                 materiaopc = "español";
+                 Console.WriteLine("Materia seleccionada: Español");
+             }
+             else if (materiaop == 3)
+             {
+                 materiaopc = "ciencias";
+                 Console.WriteLine("Materia seleccionada: Ciencias");
+             }
+             else if (materiaop == 4)
+             {
+                 materiaopc = "ciencias sociales";
+                 Console.WriteLine("Materia seleccionada: Ciencias Sociales");
+             }
+             else
+             {
+                 Console.WriteLine("Opción no válida. Por favor, ingrese un número del 1 al 4.");
+                 continue; // Vuelve al inicio del bucle
+             }
+
+
+             dia10 = materiaopc; // Asigna la materia seleccionada a la variable dia10
+             nombre = nombreOp; // Asigna el nombre del usuario a la variable nombreOp
+         }
+         else
+         {
+             Console.WriteLine("Día no válido. Por favor, ingrese un número del 1 al 5.");
+             continue; // Vuelve al inicio del bucle
+         }
+
+
+         // Aquí podrías agregar lógica para guardar la información en un calendario o base de datos
+
+
+
+     }
+     else if (op == 3)
+     {
+         Console.WriteLine("Ingrese el nombre del usuario: ");
+         string nombreop = Console.ReadLine();
+         if (nombreop == nombre)
+         {
+             Console.WriteLine("Nombre encontrado.");
+             Console.WriteLine("Desea borrarlo del calendario? (1.si / 2.no) ");
+             op = byte.Parse(Console.ReadLine());
+
+             if (op == 1)
+             {
+                 // Aquí podrías agregar lógica para borrar el nombre del calendario o base de datos
+                 Console.WriteLine("Nombre borrado del calendario.");
+                 nombre = ""; // Limpia la variable nombre
+                 dia10 = ""; // Limpia la variable dia10
+             }
+             else if (op == 2)
+             {
+                 Console.WriteLine("Operación cancelada. El nombre no ha sido borrado.");
+             }
+             else
+             {
+                 Console.WriteLine("Opción no válida. Por favor, ingrese 1 o 2.");
+             }
+         }
+
+
+         else if (op == 4)
+         {
+             Console.Clear(); // Limpia la pantalla
+         }
+     }
+     else if (op == 5)
+     {
+         break; // Sale del bucle y termina el programa
+     }
+
+
+
+
+
+
+
+ }
